@@ -4,6 +4,8 @@
 
 #include "Solver.h"
 
+#include <limits>
+
 int isAdecousSingleStep(uint64_t num)
 {
     while(num != 1)
