@@ -1,10 +1,10 @@
 
 #include <iostream>
-#include <stdint-gcc.h>
 #include <chrono>
 #include <thread>
 #include <atomic>
 #include <limits>
+#include <cstdint>
 
 #include "StepMemos.h"
 
@@ -160,17 +160,12 @@ int main(int argc, char**argv)
 
     auto start = high_resolution_clock::now();
 
-//    uint64_t adecousCount = getAudecousCountCmp(n);
-
-//    uint64_t adecousCount = getAudecousCount(n);
     uint64_t adecousCount = getAudecousCountThreaded(16, n);
 
     auto duration = duration_cast<microseconds>(high_resolution_clock::now() - start).count();
 
     std::cout << adecousCount << " adecous count under " << n << "\n";
-
     double msPerMillion = duration / 1000 / (n / 1000000);
-
     std::cout << (double) duration / 1000000 << " seconds " << msPerMillion << " ms per million \n";
     std::cout << overflows << " overflows" << '\n';
 

@@ -5,8 +5,7 @@
 #ifndef AUDECOUS_MEMO_H
 #define AUDECOUS_MEMO_H
 
-
-#include <stdint-gcc.h>
+#include <cstdint>
 
 struct Memo {
     uint64_t c;

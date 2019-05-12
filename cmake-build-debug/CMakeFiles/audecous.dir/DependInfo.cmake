@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/s/bach/e/under/millardk/CLionProjects/audecous/Memo.cpp" "/s/bach/e/under/millardk/CLionProjects/audecous/cmake-build-debug/CMakeFiles/audecous.dir/Memo.cpp.o"
-  "/s/bach/e/under/millardk/CLionProjects/audecous/StepMemos.cpp" "/s/bach/e/under/millardk/CLionProjects/audecous/cmake-build-debug/CMakeFiles/audecous.dir/StepMemos.cpp.o"
-  "/s/bach/e/under/millardk/CLionProjects/audecous/main.cpp" "/s/bach/e/under/millardk/CLionProjects/audecous/cmake-build-debug/CMakeFiles/audecous.dir/main.cpp.o"
+  "/Users/keegan/CLionProjects/adecous/Memo.cpp" "/Users/keegan/CLionProjects/adecous/cmake-build-debug/CMakeFiles/audecous.dir/Memo.cpp.o"
+  "/Users/keegan/CLionProjects/adecous/StepMemos.cpp" "/Users/keegan/CLionProjects/adecous/cmake-build-debug/CMakeFiles/audecous.dir/StepMemos.cpp.o"
+  "/Users/keegan/CLionProjects/adecous/main.cpp" "/Users/keegan/CLionProjects/adecous/cmake-build-debug/CMakeFiles/audecous.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

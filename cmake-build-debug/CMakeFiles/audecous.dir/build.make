@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /s/bach/e/under/millardk/clion-2019.1.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /s/bach/e/under/millardk/clion-2019.1.3/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /s/bach/e/under/millardk/CLionProjects/audecous
+CMAKE_SOURCE_DIR = /Users/keegan/CLionProjects/adecous
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /s/bach/e/under/millardk/CLionProjects/audecous/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/keegan/CLionProjects/adecous/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/audecous.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/audecous.dir/flags.make
 
 CMakeFiles/audecous.dir/main.cpp.o: CMakeFiles/audecous.dir/flags.make
 CMakeFiles/audecous.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/s/bach/e/under/millardk/CLionProjects/audecous/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/audecous.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/audecous.dir/main.cpp.o -c /s/bach/e/under/millardk/CLionProjects/audecous/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/keegan/CLionProjects/adecous/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/audecous.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/audecous.dir/main.cpp.o -c /Users/keegan/CLionProjects/adecous/main.cpp
 
 CMakeFiles/audecous.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audecous.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /s/bach/e/under/millardk/CLionProjects/audecous/main.cpp > CMakeFiles/audecous.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/keegan/CLionProjects/adecous/main.cpp > CMakeFiles/audecous.dir/main.cpp.i
 
 CMakeFiles/audecous.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audecous.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /s/bach/e/under/millardk/CLionProjects/audecous/main.cpp -o CMakeFiles/audecous.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/keegan/CLionProjects/adecous/main.cpp -o CMakeFiles/audecous.dir/main.cpp.s
 
 CMakeFiles/audecous.dir/StepMemos.cpp.o: CMakeFiles/audecous.dir/flags.make
 CMakeFiles/audecous.dir/StepMemos.cpp.o: ../StepMemos.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/s/bach/e/under/millardk/CLionProjects/audecous/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/audecous.dir/StepMemos.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/audecous.dir/StepMemos.cpp.o -c /s/bach/e/under/millardk/CLionProjects/audecous/StepMemos.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/keegan/CLionProjects/adecous/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/audecous.dir/StepMemos.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/audecous.dir/StepMemos.cpp.o -c /Users/keegan/CLionProjects/adecous/StepMemos.cpp
 
 CMakeFiles/audecous.dir/StepMemos.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audecous.dir/StepMemos.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /s/bach/e/under/millardk/CLionProjects/audecous/StepMemos.cpp > CMakeFiles/audecous.dir/StepMemos.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/keegan/CLionProjects/adecous/StepMemos.cpp > CMakeFiles/audecous.dir/StepMemos.cpp.i
 
 CMakeFiles/audecous.dir/StepMemos.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audecous.dir/StepMemos.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /s/bach/e/under/millardk/CLionProjects/audecous/StepMemos.cpp -o CMakeFiles/audecous.dir/StepMemos.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/keegan/CLionProjects/adecous/StepMemos.cpp -o CMakeFiles/audecous.dir/StepMemos.cpp.s
 
 CMakeFiles/audecous.dir/Memo.cpp.o: CMakeFiles/audecous.dir/flags.make
 CMakeFiles/audecous.dir/Memo.cpp.o: ../Memo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/s/bach/e/under/millardk/CLionProjects/audecous/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/audecous.dir/Memo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/audecous.dir/Memo.cpp.o -c /s/bach/e/under/millardk/CLionProjects/audecous/Memo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/keegan/CLionProjects/adecous/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/audecous.dir/Memo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/audecous.dir/Memo.cpp.o -c /Users/keegan/CLionProjects/adecous/Memo.cpp
 
 CMakeFiles/audecous.dir/Memo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audecous.dir/Memo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /s/bach/e/under/millardk/CLionProjects/audecous/Memo.cpp > CMakeFiles/audecous.dir/Memo.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/keegan/CLionProjects/adecous/Memo.cpp > CMakeFiles/audecous.dir/Memo.cpp.i
 
 CMakeFiles/audecous.dir/Memo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audecous.dir/Memo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /s/bach/e/under/millardk/CLionProjects/audecous/Memo.cpp -o CMakeFiles/audecous.dir/Memo.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/keegan/CLionProjects/adecous/Memo.cpp -o CMakeFiles/audecous.dir/Memo.cpp.s
 
 # Object files for target audecous
 audecous_OBJECTS = \
@@ -110,7 +110,7 @@ audecous: CMakeFiles/audecous.dir/StepMemos.cpp.o
 audecous: CMakeFiles/audecous.dir/Memo.cpp.o
 audecous: CMakeFiles/audecous.dir/build.make
 audecous: CMakeFiles/audecous.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/s/bach/e/under/millardk/CLionProjects/audecous/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable audecous"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/keegan/CLionProjects/adecous/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable audecous"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/audecous.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/audecous.dir/clean:
 .PHONY : CMakeFiles/audecous.dir/clean
 
 CMakeFiles/audecous.dir/depend:
-	cd /s/bach/e/under/millardk/CLionProjects/audecous/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /s/bach/e/under/millardk/CLionProjects/audecous /s/bach/e/under/millardk/CLionProjects/audecous /s/bach/e/under/millardk/CLionProjects/audecous/cmake-build-debug /s/bach/e/under/millardk/CLionProjects/audecous/cmake-build-debug /s/bach/e/under/millardk/CLionProjects/audecous/cmake-build-debug/CMakeFiles/audecous.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/keegan/CLionProjects/adecous/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/keegan/CLionProjects/adecous /Users/keegan/CLionProjects/adecous /Users/keegan/CLionProjects/adecous/cmake-build-debug /Users/keegan/CLionProjects/adecous/cmake-build-debug /Users/keegan/CLionProjects/adecous/cmake-build-debug/CMakeFiles/audecous.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/audecous.dir/depend
 

@@ -6,20 +6,26 @@
 
 #IncludeRegexTransform: 
 
-/s/bach/e/under/millardk/CLionProjects/audecous/Memo.h
-stdint-gcc.h
+/Users/keegan/CLionProjects/adecous/Memo.cpp
+Memo.h
+/Users/keegan/CLionProjects/adecous/Memo.h
+
+/Users/keegan/CLionProjects/adecous/Memo.h
+cstdint
 -
 
-/s/bach/e/under/millardk/CLionProjects/audecous/StepMemos.h
-stdint-gcc.h
+/Users/keegan/CLionProjects/adecous/StepMemos.cpp
+StepMemos.h
+/Users/keegan/CLionProjects/adecous/StepMemos.h
+
+/Users/keegan/CLionProjects/adecous/StepMemos.h
+cstdint
 -
 Memo.h
-/s/bach/e/under/millardk/CLionProjects/audecous/Memo.h
+/Users/keegan/CLionProjects/adecous/Memo.h
 
-/s/bach/e/under/millardk/CLionProjects/audecous/main.cpp
+/Users/keegan/CLionProjects/adecous/main.cpp
 iostream
--
-stdint-gcc.h
 -
 chrono
 -
@@ -29,6 +35,8 @@ atomic
 -
 limits
 -
+cstdint
+-
 StepMemos.h
-/s/bach/e/under/millardk/CLionProjects/audecous/StepMemos.h
+/Users/keegan/CLionProjects/adecous/StepMemos.h
 

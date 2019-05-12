@@ -5,7 +5,7 @@
 #ifndef AUDECOUS_STEPMEMOS_H
 #define AUDECOUS_STEPMEMOS_H
 
-#include <stdint-gcc.h>
+#include <cstdint>
 #include "Memo.h"
 
 struct StepMemos {
