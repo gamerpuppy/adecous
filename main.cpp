@@ -28,22 +28,22 @@ int isAdecousSingleStep(uint64_t num)
 
 bool overFlows(uint64_t a, uint64_t c, uint64_t d)
 {
-    uint64_t cmax = std::numeric_limits<uint64_t>().max() / a;
+    uint64_t cmax = std::numeric_limits<uint64_t>::max() / a;
     if(c > cmax) {
         return true;
     }
 
     uint64_t part = a * c;
-    uint64_t partMax = std::numeric_limits<uint64_t>().max() - d;
+    uint64_t partMax = std::numeric_limits<uint64_t>::max() - d;
     return part > partMax;
 }
 
 uint64_t getNextUnderThreshold(__int128 num) {
     do {
-        uint64_t bMask = stepMemos.bMasks[0];
+        __int128 bMask = stepMemos.bMasks[0];
         uint32_t steps = stepMemos.kVals[0];
 
-        uint64_t a = (num & ~bMask) >> steps;
+        __int128 a = (num & ~bMask) >> steps;
         uint32_t b = num & bMask;
 
         Memo &memo = stepMemos.memos[0][b];
@@ -54,7 +54,7 @@ uint64_t getNextUnderThreshold(__int128 num) {
     return num;
 }
 
-uint64_t getNextOverFlowCheck(int stepIdx, uint64_t num)
+uint64_t getNextOverFlowCheck(int stepIdx, uint64_t num, uint64_t numorig)
 {
     uint64_t bMask = stepMemos.bMasks[stepIdx];
     uint32_t steps = stepMemos.kVals[stepIdx];
@@ -64,7 +64,7 @@ uint64_t getNextOverFlowCheck(int stepIdx, uint64_t num)
 
     Memo &memo = stepMemos.memos[stepIdx][b];
     if(overFlows(a, memo.c, memo.d)){
-        overflows++;
+        std::cout << numorig << " " << a << " " << memo.c << " " << memo.d << std::endl;
         __int128 next = (__int128) a * memo.c + memo.d;
         return getNextUnderThreshold(next);
     }
@@ -93,7 +93,7 @@ int isAdecous(uint64_t num)
             if (cur < overflowLimit) {
                 cur = getNext(0, cur);
             } else {
-                cur = getNextOverFlowCheck(0, cur);
+                cur = getNextOverFlowCheck(0, cur, num);
             }
 
         } else if (cur >> stepMemos.kVals[1] >= 10) {
@@ -113,6 +113,9 @@ void adecousCountTask(std::atomic_llong *counter, uint64_t start, uint64_t inc, 
 {
     uint64_t count = 0;
     for (uint64_t x = start; x < ub; x += inc) {
+        if (x % 1000000000 == 0)
+            std::cout << x / 1000000000 << " B" << std::endl;
+
         count += isAdecous(x);
     }
     *counter += count;
@@ -156,13 +159,16 @@ using namespace std::chrono;
 
 int main(int argc, char**argv)
 {
-    uint64_t n = 1000000000;
+
+//    for (uint64_t x = 1000000000000; true; ++x) {
+//        isAdecous(x);
+//    }
+
+
+    uint64_t n = 100000000000;
 
     auto start = high_resolution_clock::now();
 
-//    uint64_t adecousCount = getAudecousCountCmp(n);
-
-//    uint64_t adecousCount = getAudecousCount(n);
     uint64_t adecousCount = getAudecousCountThreaded(16, n);
 
     auto duration = duration_cast<microseconds>(high_resolution_clock::now() - start).count();
