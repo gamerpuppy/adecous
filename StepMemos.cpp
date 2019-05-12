@@ -18,7 +18,7 @@ Memo* createMemoArray(int steps)
 
 StepMemos::StepMemos()
 {
-    kVals[0] = 20;
+    kVals[0] = 22;
     kVals[1] = 17;
     kVals[2] = 7;
 
@@ -31,8 +31,8 @@ StepMemos::StepMemos()
 
 StepMemos::~StepMemos()
 {
-    for(int i = 0; i < 3; i++)
+    for (auto &memo : memos)
     {
-        delete memos[i];
+        delete memo;
     }
 }
