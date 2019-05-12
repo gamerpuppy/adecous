@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/s/bach/e/under/millardk/CLionProjects/audecous/Memo.h
+stdint-gcc.h
+-
+
+/s/bach/e/under/millardk/CLionProjects/audecous/StepMemos.h
+stdint-gcc.h
+-
+Memo.h
+/s/bach/e/under/millardk/CLionProjects/audecous/Memo.h
+
+/s/bach/e/under/millardk/CLionProjects/audecous/main.cpp
+iostream
+-
+stdint-gcc.h
+-
+chrono
+-
+thread
+-
+atomic
+-
+limits
+-
+StepMemos.h
+/s/bach/e/under/millardk/CLionProjects/audecous/StepMemos.h
+

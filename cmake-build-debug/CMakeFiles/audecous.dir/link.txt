@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -pthread -g   CMakeFiles/audecous.dir/main.cpp.o CMakeFiles/audecous.dir/StepMemos.cpp.o CMakeFiles/audecous.dir/Memo.cpp.o  -o audecous 
