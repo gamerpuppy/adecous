@@ -15,7 +15,7 @@ int isAdecousSingleStep(uint64_t num);
 class Solver {
 private:
     static const uint64_t overflowLimit = 10000000000;
-    static const int cacheSize = 4096*8*1000;
+    static const int cacheSize = 4096*8*200;
     static const int k = 21;
     static const uint64_t bMask = (1 << k) - 1;
 
