@@ -7,9 +7,13 @@
 
 #include <cstdint>
 
-struct Memo {
-    uint64_t c;
-    uint64_t d;
+class Memo {
+private:
+    Memo(uint64_t c_, uint64_t d_);
+
+public:
+    const uint64_t c;
+    const uint64_t d;
     static Memo makeMemo(int k, int num);
 };
 

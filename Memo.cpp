@@ -26,11 +26,8 @@ Memo Memo::makeMemo(int k, int num)
             cur = (3 * cur + 1) / 2;
         }
     }
-
-    Memo memo;
-    memo.c = pow3(odds);
-    memo.d = cur;
-    return memo;
+    return Memo(pow3(odds), cur);
 }
 
+Memo::Memo(uint64_t c_, uint64_t d_): c(c_), d(d_) {}
 
