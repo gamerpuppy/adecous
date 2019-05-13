@@ -104,10 +104,12 @@ void Solver::initMemos()
     }
 }
 
-Solver::Solver() {
+Solver::Solver(int k_, int cacheSize_): k(k_), cacheSize(cacheSize_) {
     initCache();
     initMemos();
 }
+
+Solver::Solver(): Solver(defaultK, defaultCacheSize) {}
 
 
 

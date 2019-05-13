@@ -13,11 +13,16 @@ bool overFlows(uint64_t a, uint64_t c, uint64_t d);
 int isAdecousSingleStep(uint64_t num);
 
 class Solver {
+public:
+    static const int defaultCacheSize = 4096*8*200;
+    static const int defaultK = 21;
+
 private:
     static const uint64_t overflowLimit = 10000000000;
-    static const int cacheSize = 4096*8*200;
-    static const int k = 21;
-    static const uint64_t bMask = (1 << k) - 1;
+
+    const int cacheSize;
+    const int k = 21;
+    const uint64_t bMask = (1 << k) - 1;
 
     std::vector<Memo> memos;
     std::vector<bool> cache;
@@ -31,6 +36,7 @@ private:
 
 public:
     Solver();
+    Solver(int k, int cacheSize);
     int isAdecous(uint64_t num) const;
 };
 

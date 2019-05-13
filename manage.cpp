@@ -3,8 +3,11 @@
 //
 
 #include "manage.h"
+
 #include <thread>
 #include <atomic>
+#include <fstream>
+#include <cmath>
 
 struct Task {
     const Solver &solver;
@@ -45,3 +48,31 @@ uint64_t solve(uint64_t lb, uint64_t ub, int tc)
     }
     return count;
 }
+
+void generatePicure(const std::string &filepath, uint64_t lb, uint64_t ub, uint64_t width) {
+    uint64_t size = ub-lb;
+    uint64_t height = ceil((double)size/width);
+    const std::string file = filepath+"_"+std::to_string(width)+"_"+std::to_string(height)+".pgm";
+    std::ofstream out(file);
+
+    out << "P2 " << width << " " << height << " " << 255 << '\n';
+    const Solver solver;
+    for(uint64_t x = lb; x < ub; ++x)
+    {
+        int val = solver.isAdecous(x) ? 255 : 0;
+        out << val << " ";
+    }
+
+    uint64_t rem = width*height - size;
+    for(uint64_t i = 0; i < rem; i++)
+        out << "0 ";
+
+    out << "\n";
+
+    out.close();
+}
+
+
+
+
+
