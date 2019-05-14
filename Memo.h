@@ -15,7 +15,12 @@ public:
     const uint64_t c;
     const uint64_t d;
     static Memo makeMemo(int k, int num);
-};
 
+    Memo(const Memo&) = default;
+
+    bool operator<(const Memo &o) const;
+    bool operator==(const Memo &o) const;
+
+};
 
 #endif //AUDECOUS_MEMO_H

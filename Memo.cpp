@@ -31,3 +31,16 @@ Memo Memo::makeMemo(int k, int num)
 
 Memo::Memo(uint64_t c_, uint64_t d_): c(c_), d(d_) {}
 
+bool Memo::operator<(const Memo &o) const
+{
+    if (c == o.c) {
+        return d < o.d;
+    } else {
+        return c < o.c;
+    }
+}
+
+bool Memo::operator==(const Memo &o) const
+{
+    return c == o.c && d == o.d;
+}

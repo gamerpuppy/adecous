@@ -49,6 +49,7 @@ uint64_t solve(uint64_t lb, uint64_t ub, int tc)
     return count;
 }
 
+
 void generatePicure(const std::string &filepath, uint64_t lb, uint64_t ub, uint64_t width) {
     uint64_t size = ub-lb;
     uint64_t height = ceil((double)size/width);
