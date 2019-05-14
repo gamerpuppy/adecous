@@ -32,17 +32,16 @@ using namespace std::chrono;
 
 int main(int argc, char**argv)
 {
-    Solver solver(16);
+    Solver solver(18);
 
     uint64_t count = 0;
-
-    for (int i = 1; i < 40; ++i)
+    for (int i = 1; i < 42; ++i)
     {
         uint64_t lb = 1ull << (i-1);
         uint64_t ub = 1ull << i;
-        auto res = solver.getCountThreaded(lb, ub, 8);
+        auto res = solver.getCountThreaded(lb, ub, 12);
         count += res;
-        double percent = (double)count/ub;
+        double percent = (double)count*100/ub;
         cout << "2^" << i << " " << count << " (" << percent << "%)" << endl;
     }
 
