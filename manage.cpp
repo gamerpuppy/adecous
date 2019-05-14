@@ -28,9 +28,8 @@ struct Task {
     }
 };
 
-uint64_t solve(uint64_t lb, uint64_t ub, int tc)
+uint64_t solve(const Solver &solver, uint64_t lb, uint64_t ub, int tc)
 {
-    const Solver solver;
     std::atomic_llong count(0);
 
     std::thread *threads[tc];

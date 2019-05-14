@@ -32,7 +32,7 @@ public:
     static const uint64_t overflowLimit = 10000000000;
 
     const int cacheSize;
-    const int k = 21;
+    const int k = 15;
     const uint64_t bMask = (1 << k) - 1;
 
     std::vector<Memo> memos;

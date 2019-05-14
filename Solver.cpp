@@ -7,6 +7,7 @@
 #include <limits>
 #include <algorithm>
 #include <thread>
+#include <atomic>
 
 int isAdecousSingleStep(uint64_t num)
 {
@@ -182,13 +183,13 @@ uint64_t Solver::getCount(uint64_t lb, uint64_t ub) const
     }
 
     auto bound = aLow << k;
-    for (int x = lb; x < bound; ++x)
+    for (auto x = lb; x < bound; ++x)
     {
         count += isAdecous(x);
     }
 
     auto start = aHigh << k;
-    for (int x = start; x < ub; ++x)
+    for (auto x = start; x < ub; ++x)
     {
         count += isAdecous(x);
     }

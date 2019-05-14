@@ -8,7 +8,7 @@
 #include "Solver.h"
 #include <string>
 
-uint64_t solve(uint64_t lb, uint64_t ub, int tc);
+uint64_t solve(const Solver & solver, uint64_t lb, uint64_t ub, int tc);
 
 void generatePicure(const std::string &filepath, uint64_t lb, uint64_t ub, uint64_t width);
 
